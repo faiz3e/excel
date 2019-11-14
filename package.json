@@ -8,15 +8,17 @@
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0",
-    "xlsx": "^0.15.1",
-    "homepage": "https://faiz3e.github.io/excel"
+    "xlsx": "^0.15.1"
+   
   },
   "scripts": {
     "start": "react-scripts start",  
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+  "homepage": "https://faiz3e.github.io/excel"
   },
   "eslintConfig": {
     "extends": "react-app"
